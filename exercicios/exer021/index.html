@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+   <link rel="stylesheet" href="impressora.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: rgb(255, 0, 0);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+
+header {
+    text-align: center;
+    background-color:  #333333;
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+
+menu li {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    background-color: #1f29b2;
+    border-radius: 5px;
+    color: #fff;
+}
+
+menu li:hover {
+    background-color: #f79c9c;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+article {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #53ac00;
+}
+
+article p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000000;
+} 
+article img {
+    width: 100%;
+    max-width: 900px; 
+    height: auto; 
+    display: block;
+    margin: 10px auto; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    menu li {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    article h2 {
+        font-size: 1.3rem;
+    }
+
+    article p {
+        font-size: 0.9rem;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <h1>Notícias</h1>
+        <menu>
+            <ul>
+                <li>Esporte</li>
+                <li>Política</li>
+                <li>Tecnologia</li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Esporte</h2>
+            <p>Os esportes são uma das formas mais universais de entretenimento e competição, presentes em culturas ao redor do mundo. Eles têm um impacto significativo na sociedade, promovendo a saúde, o espírito de equipe e a superação de limites. Desde os Jogos Olímpicos até as ligas de futebol, basquete e outros esportes, milhões de pessoas acompanham e participam de eventos esportivos globalmente. Além de proporcionar diversão e emoção, os esportes também atuam como uma plataforma para questões sociais, como igualdade de gênero, racismo e inclusão. O esporte profissional gera grandes quantias de dinheiro e influência, especialmente no caso de atletas que se tornam ícones globais. No entanto, também existem desafios, como a corrupção em algumas federações, o doping e o uso excessivo de tecnologias que podem prejudicar a essência da competição. Ainda assim, a prática de esportes amadores e o incentivo ao bem-estar físico continuam a ser fundamentais em muitas sociedades, com um crescente movimento de busca por uma vida mais saudável e ativa.
+
+            </p>
+        </article>
+
+        <article>
+            <h2>Política</h2>
+            <p>A política desempenha um papel fundamental na organização e no desenvolvimento das sociedades. Ela envolve o processo de tomada de decisões sobre questões públicas, como a criação de leis, distribuição de recursos e a organização do poder em um país ou região. A política pode ser praticada em diferentes níveis: local, estadual, nacional e até internacional. Os sistemas políticos variam desde democracias, onde o povo tem o poder de eleger seus governantes, até regimes autoritários, onde uma pessoa ou grupo exerce o controle absoluto. Além disso, questões políticas atuais, como a mudança climática, desigualdade social e o avanço de direitos humanos, estão no centro dos debates, com políticas públicas sendo criadas para abordar essas questões de forma eficaz. O cenário político global também é moldado por alianças internacionais, acordos comerciais e tratados que buscam promover a paz e a estabilidade.
+
+            </p>
+        </article>
+
+        <article>
+            <h2>Tecnologia</h2>
+            <p>A tecnologia tem sido um dos principais motores de transformação no mundo moderno, impactando todos os aspectos da vida humana, desde a economia até a saúde. A evolução tecnológica levou a inovações incríveis, como a inteligência artificial, o aprendizado de máquina e a computação em nuvem, que mudaram a forma como trabalhamos, nos comunicamos e até pensamos. Em um mundo cada vez mais digital, a tecnologia está presente em dispositivos como smartphones, laptops e wearables, além de transformar setores como transporte, educação e medicina. Um exemplo significativo é a inteligência artificial, que está revolucionando indústrias como a saúde com diagnósticos mais rápidos e precisos, e a automação de processos em fábricas e escritórios. No entanto, com tantas vantagens, também surgem questões sobre a privacidade, segurança e o impacto da automação no emprego. Assim, o debate sobre como equilibrar os benefícios e os riscos da tecnologia continua a crescer.</p> 
+        </article>
+    </main
+
